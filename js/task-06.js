@@ -16,7 +16,10 @@ inputRef.addEventListener('blur', () => {
     
     if (inputRef.value.split('').length < inputRef.dataset.length) {
     inputRef.classList.add('invalid')
-    } 
+}  else {
+    
+        inputRef.classList.remove('invalid')
+    }
     return inputRef.classList.add('valid')
 })
 
