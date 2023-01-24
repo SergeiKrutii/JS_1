@@ -8,7 +8,7 @@ function onFormSubmit (event)  {
     const emailValue = event.currentTarget.elements.email.value;
     const passwordValue = event.currentTarget.elements.password.value;
 
-    if (!emailValue || !passwordValue) {
+    if (emailValue === '' || passwordValue === '') {
        return window.alert('Заполните все поля!!')  
     }
 
